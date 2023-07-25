@@ -1,0 +1,270 @@
+/* Global Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    background-color: #c6e8bc; /* Add a light background color */
+  }
+  
+  header {
+    font-family: 'Poppins', sans-serif;
+    background-color: #83a87f;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  a{
+    border: #333;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .navbar {
+    min-height: 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 24px
+
+  }
+
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:60px;
+
+  }
+  .nav-branding{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+
+  }
+  .nav-link {
+    transition: 0.7s ease;
+  }
+  .nav-link:hover{
+    color: #68b648;
+  }
+
+
+  /* Mobile View Styles */
+  @media (max-width: 30rem) {
+    body {
+      font-size: 0.75rem;
+    }
+
+    .nav-menu{
+    display: block;
+      
+    }
+
+    .float{
+        overflow: auto;
+        width: 100%;
+        margin-right: 1.5rem;
+      }
+
+      .solutions {
+        position: absolute;
+        top: 28%;
+        left: 4%;
+        text-align: center;
+        margin: 1rem auto;
+      }
+    .nav-menu{
+      padding: 10px;
+      justify-content: space-between;
+    }
+
+    .nav-item{
+      padding: 6px;
+     ;
+    }
+  
+
+    .desktop {
+      display: none;
+    }
+    
+    .content-container {
+      margin: 2rem;
+    }
+  }
+  .nav-branding {
+    padding-left: 9%;
+  }
+
+
+
+  /* Tablet/Desktop View Styles */
+  @media (min-width: 30rem) {
+    body {
+      font-size: 1rem;
+    }
+
+    .float {
+      float: left;
+      overflow: auto;
+      width: 40%;
+      margin-right: 2rem;
+    }
+
+    .nav-bar {
+      float: right;
+      display: flex;
+    }
+
+    .navbar{
+      justify-content: center;
+    }
+  
+    .navbar ul li a{ 
+      border: 1px solid black;
+      border-radius: 2px;
+      box-shadow: rgb(0, 0, 0);
+      padding: 0.7rem 4.2rem;
+      margin: 0.1rem;
+      justify-content: space-between;
+    }
+
+    .line{
+      border-bottom: #fff;
+    }
+
+    .navbar a {
+      border: 1px solid #3a552f;
+    
+    }
+    .solutions {
+      position: relative;
+      bottom: -15%;
+      left: -26%;
+      text-align: center;
+      margin: 1rem auto;
+    }
+    
+    .nav-branding {
+      position: relative;
+      left: 8%;
+    }
+
+    footer{
+      margin-top: auto;
+    }
+
+  
+    
+  }
+  
+  /* Shared Styles */
+  .masthead {
+    /* Add masthead styles with background image */
+    background-image: url('../images/img.3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .tagline {
+    font-family: 'Your-Serif-Font', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .nav-bar ul {
+    /* Add nav-bar list styles */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .nav-bar a {
+    text-decoration: none;
+
+  }
+  
+  .nav-bar a:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 0.25rem;
+  }
+  
+  .main-content {
+    /* Add main content styles */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 2rem auto;
+    max-width: 60rem;
+  }
+  
+  .main-content img {
+    /* Add main content image styles */
+    /* width: 100%; */
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-content p {
+    /* Add main content paragraph styles */
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  .solution-button {
+    background-color: #3a552f;
+    color: #fff;
+    border: none;
+    padding:  0.2rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    border-radius: 5rem;
+    
+  }
+  
+  .solution-button:hover {
+    background-color: #52a73a;
+  }
+  
+  .active-button {
+    /* Add active button styles */
+    background-color: #3b8732;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 5rem;
+    margin-top: auto;
+  }
+  
+  .social-icons {
+    /* Add social media icons styles */
+    font-size: 1.5rem;
+  }
+  
+  .icon-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.2s ease;
+  }
+  
+  .icon-link:hover {
+    color: #68b648;
+  }
+  
